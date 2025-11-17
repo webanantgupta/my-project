@@ -25,25 +25,25 @@ const Aboutsection = () => {
         <div>
             <h2 className="text-2xl font-semibold mt-10">Property Highlights</h2>
             <div className="flex justify-between mt-10 pl-30 pr-30">
-                <div className=" p-5 w-[250px] border rounded-md flex items-center justify-evenly">
+                <div className="p-5 w-[250px] border rounded-md flex items-center justify-evenly shadow-2xl">
                     <div  className="bg-indigo-400 rounded-full p-1">
                         <FaHireAHelper className="text-2xl"/>
                     </div>
                     <div className="text-lg">Historical Significance</div>
                 </div>
-                <div className=" p-5 w-[250px] border rounded-md flex items-center justify-evenly">
+                <div className=" p-5 w-[250px] border rounded-md flex items-center justify-evenly shadow-2xl">
                     <div className="bg-blue-400 rounded-full p-1">
                         <IoAccessibility className="text-2xl"/>
                         </div>
                     <div className="text-lg">Easy Accessibility</div>
                 </div>
-                <div className="p-5 w-[250px] border rounded-md flex items-center justify-evenly">
+                <div className="p-5 w-[250px] border rounded-md flex items-center justify-evenly shadow-2xl">
                     <div  className="bg-slate-400 rounded-full p-1">
                         <RiParkingBoxFill  className="text-2xl"/>
                     </div>
                     <div className="text-lg">On Site Parking</div>
                 </div>
-                <div className=" p-5 w-[250px] border rounded-md flex items-center justify-evenly">
+                <div className=" p-5 w-[250px] border rounded-md flex items-center justify-evenly shadow-2xl">
                     <div  className="bg-green-400 rounded-full p-1">
                         <FaWifi className="text-2xl"/>
                     </div>

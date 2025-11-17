@@ -1,17 +1,19 @@
-import baradarilogo from "../assets/baradarilogo.png"
+import baradarilogo from "../assets/footerlogo.png"
 
 const Navbar = () => {
-    return <div className="flex justify-between items-center h-24 bg-neutral-200">
+    return <div className="flex justify-between items-center h-32 bg-neutral-200">
         <div className="basis-1/4 cursor-pointer">
-            <img src={baradarilogo} alt="baradari logo" style={{height:"120px"}} />
+            <img className="rounded-full"  src={baradarilogo} alt="baradari logo" style={{ height: "120px" }} />
         </div>
-        <div className="flex justify-evenly basis-2/4 text-lg font-semibold">
-            <div className="cursor-pointer">How it Works</div>
-            <div className="cursor-pointer">Members</div>
-            <div className="cursor-pointer">Calender</div>
-            <div className="cursor-pointer">Events</div>
-            <div className="cursor-pointer">Reviews</div>
-        </div>
+            <ul className="flex justify-evenly basis-2/4 text-lg font-semibold">
+                <li className="cursor-pointer">About</li>
+                <li className="cursor-pointer">How To Book</li>
+                <li className="cursor-pointer">Members</li>
+                <li className="cursor-pointer">Events</li>
+                <li className="cursor-pointer">Reviews</li>
+            </ul>
+
+    
     </div>
 }
 
