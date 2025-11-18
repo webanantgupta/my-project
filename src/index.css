@@ -3,5 +3,16 @@
 
 body{
       font-family: "Russo One", sans-serif;
+}
 
+html{
+      scroll-behavior: smooth;
+}
+
+.book_section .swiper-slide{
+      height: 200px !important;
+}
+
+.input{
+      color: black;
 }

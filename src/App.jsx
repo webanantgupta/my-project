@@ -1,13 +1,13 @@
-import CommonBtn from "./common/CommonBtn"
 import Aboutsection from "./components/Aboutsection"
-import ComingEvents from "./components/ComingEvents"
 import Contactus from "./components/Contactus"
 import Footer from "./components/Footer"
 import Herosection from "./components/Herosection"
 import Members from "./components/Members"
 import Navbar from "./components/Navbar"
-import Testimonial from "./components/Testimonial"
-import Works from "./components/Works"
+import Reviews from "./components/Reviews"
+import Book from "./components/Book"
+import Highlights from "./components/Highlights"
+import UpComingEvents from "./components/UpComingEvents"
 
 
 function App() {
@@ -18,10 +18,11 @@ function App() {
       <Navbar />
       <Herosection />
       <Aboutsection />
-      <Works />
+      <Highlights/>
+      <Book />
       <Members />
-      <ComingEvents/>
-      <Testimonial/>
+      <UpComingEvents/>
+      <Reviews/>
       <Contactus/>
       <Footer/>
     </div>
