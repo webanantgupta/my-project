@@ -1,9 +1,9 @@
 import workimg from "../assets/baradari2.png"
-import { IoSearch } from "react-icons/io5";
-import { FaRegCalendarCheck } from "react-icons/fa6";
-import { LuNotebookPen } from "react-icons/lu";
-import { MdAttachMoney } from "react-icons/md";
-import { MdLocalPostOffice } from "react-icons/md";
+import { Fa1 } from "react-icons/fa6";
+import { Fa2 } from "react-icons/fa6";
+import { Fa3 } from "react-icons/fa6";
+import { Fa4 } from "react-icons/fa6";
+import { Fa5 } from "react-icons/fa6";
 // import React, { useRef, useState } from 'react';
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -18,7 +18,7 @@ import { Navigation } from 'swiper/modules';
 
 
 const Book = () => {
-    return <div id="book" className="mt-5 mb-10 pl-5 pr-5">
+    return <section id="book" className="scroll-mt-36 mt-5 mb-10 pl-5 pr-5">
         <div className="flex mt-20">
             <div className="basis-2/4">
                 <img className="w-full h-[400px] object-cover rounded-md mt-20" src={workimg} alt="baradari" />
@@ -43,9 +43,9 @@ const Book = () => {
                     >
                         <SwiperSlide>
                             <div className="flex justify-between items-center border h-38 w-full p-5 mb-5 rounded-2xl">
-                                <div className="flex flex-col justify-center basis-1/3 ">
+                                <div className="flex flex-col justify-center items-center basis-1/3 ">
                                     <div>
-                                        <IoSearch className="bg-violet-500 text-6xl p-2 rounded-full" />
+                                        <Fa1 className="bg-violet-500 text-6xl text-white p-2 rounded-full" />
                                     </div>
                                     <div>
                                         <h4 className="text-2xl text-indigo-800 font-semibold">Explore Venue</h4>
@@ -59,9 +59,9 @@ const Book = () => {
 
                         <SwiperSlide>
                             <div className="flex justify-between items-center border h-38 w-full p-5 mb-5 rounded-2xl">
-                                <div className="flex flex-col justify-center basis-1/3 ">
+                                <div className="flex flex-col justify-center items-center basis-1/3 ">
                                     <div>
-                                        <FaRegCalendarCheck className="bg-blue-500 text-6xl p-2 rounded-full" />
+                                        <Fa2 className="bg-blue-500 text-6xl text-white p-2 rounded-full" />
                                     </div>
                                     <div>
                                         <h4 className="text-2xl text-indigo-800 font-semibold">Check Availability</h4>
@@ -75,9 +75,9 @@ const Book = () => {
 
                         <SwiperSlide>
                             <div className="flex justify-between items-center border h-38 w-full p-5 mb-5 rounded-2xl">
-                                <div className="flex flex-col justify-center basis-1/3 ">
+                                <div className="flex flex-col justify-center items-center basis-1/3 ">
                                     <div>
-                                        <LuNotebookPen className="bg-green-500 text-6xl p-2 rounded-full" />
+                                        <Fa3 className="bg-green-500 text-6xl text-white p-2 rounded-full" />
                                     </div>
                                     <div>
                                         <h4 className="text-2xl text-indigo-800 font-semibold">Fill Booking Form</h4>
@@ -91,12 +91,12 @@ const Book = () => {
 
                         <SwiperSlide>
                             <div className="flex justify-between items-center border h-38 w-full p-5 mb-5 rounded-2xl">
-                                <div className="flex flex-col justify-center basis-1/3 ">
+                                <div className="flex flex-col justify-center items-center basis-1/3 ">
                                     <div>
-                                        <MdAttachMoney className="bg-yellow-500 text-6xl p-2 rounded-full" />
+                                        <Fa4 className="bg-yellow-500 text-6xl text-white p-2 rounded-full" />
                                     </div>
                                     <div>
-                                        <h4 className="text-2xl text-indigo-800 font-semibold">Make Secure Payment</h4>
+                                        <h4 className="text-2xl text-indigo-800 font-semibold">Make Payment</h4>
                                     </div>
                                 </div>
                                 <div className="basis-2/3">
@@ -107,9 +107,9 @@ const Book = () => {
 
                         <SwiperSlide>
                             <div className="flex justify-between items-center border h-38 w-full p-5 mb-5 rounded-2xl">
-                                <div className="flex flex-col justify-center basis-1/3 ">
+                                <div className="flex flex-col justify-center items-center basis-1/3 ">
                                     <div>
-                                        <MdLocalPostOffice className="bg-orange-500 text-6xl p-2 rounded-full" />
+                                        <Fa5 className="bg-orange-500 text-6xl text-white p-2 rounded-full" />
                                     </div>
                                     <div>
                                         <h4 className="text-2xl text-indigo-800 font-semibold">Get Confirmation</h4>
@@ -127,7 +127,7 @@ const Book = () => {
             </div>
         </div>
 
-    </div>
+    </section>
 }
 
 export default Book; 

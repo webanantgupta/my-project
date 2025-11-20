@@ -16,9 +16,9 @@ import 'swiper/css/pagination';
 import { Navigation, Pagination, Mousewheel, Keyboard } from 'swiper/modules';
 
 const UpComingEvents = () => {
-    return <div id="event" className="mt-10 mb-10 pl-5 pr-5">
+    return <section id="event" className="scroll-mt-36 mt-20 mb-10 pl-5 pr-5">
         <h2 className="text-center text-4xl text-indigo-800 font-semibold">Upcoming Events</h2>
-        <div className="flex flex-wrap justify-evenly items-center mt-10">
+        <div className="flex flex-wrap justify-evenly items-center mt-5">
             <Swiper
                 cssMode={true}
                 slidesPerView={3}
@@ -217,7 +217,7 @@ const UpComingEvents = () => {
                 </div>
             </div>  */}
         </div>
-    </div>
+    </section>
 }
 
 export default UpComingEvents

@@ -16,3 +16,141 @@ html{
 .input{
       color: black;
 }
+
+
+/*-----------------------------HERO SECTION--------------------------- */
+
+@media (max-width: 600px){
+      .hero_element{
+          text-align: center;
+          padding: 0 5px 0 5px;
+      }
+}
+
+@media (min-width: 600px) and (max-width: 800px){
+      .hero_element{
+         text-align: center;
+      }
+}
+
+
+/*---------------------------------- ABOUT SECTION ----------------------------------------------- */
+
+
+@media (max-width: 600px){
+    .about_element{
+       display: flex;
+       flex-direction: column;
+}
+
+.about_content{
+  margin-top: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.about_image img{
+      padding-left: 10px;
+      padding-right: 10px;
+      border-radius: 20px;
+      margin-top: 5px;
+}
+
+.about_container{
+      scroll-margin-top: 10px;
+}
+}
+
+@media (min-width:600px) and (max-width: 800px){
+      .about_element{
+            display: flex;
+            flex-direction: column;
+      }
+      .about_container{
+            scroll-margin-top: 20px;
+      }
+
+      .about_content{
+            margin-top: 40px;
+            padding-left: 20px;
+            padding-right: 20px;
+      }
+      .about_image img{
+            padding-left: 20px;
+            padding-right: 20px;
+            border-radius: 40px;
+            margin-top: 20px;
+      }
+}
+
+@media (min-width: 800px) and (max-width: 1800px){
+      .about_image img{
+           height: 100%;
+      }
+      .about_container{
+            scroll-margin-top: 10px;
+      }
+}
+
+@media (min-width:1200px){
+      .about_container{
+            margin-top: 50px;
+            padding-left: 10px;
+            padding-right: 10px;
+            scroll-margin-top: 20px;
+      }
+
+      .about_image img{
+            border-radius: 20px;
+      }
+}
+
+
+/*------------------------------ POPULAR HIGHLIGHTS------------------------------ */
+/* 
+@media (max-width:600px){
+      .highlight_element{
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       gap: 30px;
+       margin-top: 30px;
+      }
+
+      .highlight_heading{
+            margin-top: 60px;
+            text-align: center;
+      }
+      .highlight_each{
+            padding: 10px;
+            height: 50px;
+            width: 80%;
+      }
+}
+
+@media (min-width:600px) and (max-width:800px){
+      .highlight_heading h2{
+            margin-top: 50px;
+            text-align: center;
+      }
+
+      .highlight_element{
+            margin-top: 20px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+
+      }
+
+      .highlight_each{
+            padding: 20px;
+      }
+} */
+
+
+
+
+
+
+
+
