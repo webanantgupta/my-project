@@ -7,11 +7,11 @@ import { Fa5 } from "react-icons/fa6";
 // import React, { useRef, useState } from 'react';
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
-// Import Swiper styles
+// Import Swiper styles;
 import 'swiper/css';
 import 'swiper/css/pagination';
 // import './styles.css';
-// import required modules
+// import required modules;
 import { Mousewheel, Pagination } from 'swiper/modules';
 import { Navigation } from 'swiper/modules';
 

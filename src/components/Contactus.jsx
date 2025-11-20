@@ -31,11 +31,8 @@ const Contactus = () => {
         <div>
             <h2 className="text-center font-semibold text-indigo-800 text-4xl mt-20 mb-5">Contact Us</h2>
             <div className=" mb-10">
-                <div className="flex justify-center ">
-                    <div className="basis-1/2">
-                        <iframe className="w-full h-full rounded-l-2xl" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3559.611157896548!2d80.92936257489292!3d26.852317262684494!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399bfda4ab6d2195%3A0x68bfb5eaf123f55d!2sSafed%20Baradari!5e0!3m2!1sen!2sin!4v1763531556072!5m2!1sen!2sin"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    </div>
-                    <div className="bg-neutral-300 rounded-r-2xl basis-1/2 w-150 mx-auto flex justify-center items-center p-5">
+                <div className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-2 ">
+                    <div className="bg-neutral-300 rounded-r-2xl basis-1/2 w-80 sm:w-160  mx-auto flex justify-center items-center p-5">
                         <div className="w-full">
                             <form className="flex flex-col items-center w-full" onSubmit={handleSubmit}>
                                 <div className="flex items-center justify-start w-full gap-4 mt-5 mb-5 p-2">
@@ -106,6 +103,10 @@ const Contactus = () => {
                             </form>
                         </div>
                     </div>
+                    <div className="basis-1/2">
+                        <iframe className="w-full h-full rounded-l-2xl" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3559.611157896548!2d80.92936257489292!3d26.852317262684494!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399bfda4ab6d2195%3A0x68bfb5eaf123f55d!2sSafed%20Baradari!5e0!3m2!1sen!2sin!4v1763531556072!5m2!1sen!2sin"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    
                 </div>
                 <div className="grid grid-cols-1  sm:grid-cols-1 w-full lg:grid-cols-3">
                     <div className="flex flex-col items-center justify-between basis-2/6 p-6 shadow-2xl">

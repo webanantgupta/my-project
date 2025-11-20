@@ -17,7 +17,6 @@ const Highlights = () => {
              sm:grid-cols-2
              lg:grid-cols-4
              place-items-center
-
              ">
                 <div className=" highlight_each w-[350px] sm:w-[380px] lg:w-[280px] border rounded-md flex items-center mb-10 p-5 justify-evenly shadow-2xl">
                     <div className="bg-indigo-800 rounded-full p-1">
@@ -26,7 +25,7 @@ const Highlights = () => {
                     <div className="text-lg">Historical Significance</div>
                 </div>
                 <div className=" highlight_each w-[350px] sm:w-[380px] lg:w-[280px] border rounded-md flex items-center justify-evenly shadow-2xl  mb-10 p-5">
-                    <div className="bg-indigo-800 rounded-full p-1">
+                    <div className="bg-indigo-800 rounded-full p-1">    
                         <IoAccessibility className="text-2xl text-white" />
                     </div>
                     <div className="text-lg">Easy Accessibility</div>

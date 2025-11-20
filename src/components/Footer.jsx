@@ -1,4 +1,4 @@
-import logo from "../assets/footerlogo.png"
+import logo from "../assets/baradari111.png"
 import { BsMeta } from "react-icons/bs";
 import { SiInstagram } from "react-icons/si";
 import { FaLinkedinIn } from "react-icons/fa6";
