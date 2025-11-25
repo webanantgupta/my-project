@@ -1,7 +1,11 @@
 import BookingValidation from "./BookingValidation";
 import { useFormik } from "formik";
+import {toast} from "react-toastify"
 
 const BookingModal = ({ open, onClose }) => {
+
+// const [submit,setSubmit] = useState(null);
+
   if (!open) return null;
 
   const initialValues = {
@@ -18,9 +22,10 @@ const BookingModal = ({ open, onClose }) => {
   const { values, touched, errors, handleBlur, handleChange, handleSubmit } = useFormik({
     initialValues: initialValues,
     validationSchema: BookingValidation,
-    onSubmit(values) {
+    onSubmit(values,{resetForm}) {
       console.log(values);
-
+      // toast.success("Information Submitted")
+      resetForm();
     }
   });
 
@@ -40,7 +45,7 @@ const BookingModal = ({ open, onClose }) => {
         {/* Body */}
         <div className="py-4">
           <form onSubmit={handleSubmit}>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2">
+            <div className="grid grid-cols-1 gap-2 sm:grid-cols-2 lg:grid-cols-2">
               <div className="flex flex-col">
                 <label>Name</label>
                 <input
@@ -50,10 +55,10 @@ const BookingModal = ({ open, onClose }) => {
                   type="text"
                   placeholder="Enter your full name"
                   name="name"
+                  className="bg-neutral-300 booking_input p-2"
                 />
               {errors.name && touched.name && <small className="text-red-500">{errors.name}</small>}
               </div>
-
               <div className="flex flex-col">
                 <label>Mobile</label>
                 <input
@@ -63,12 +68,10 @@ const BookingModal = ({ open, onClose }) => {
                   name="mobile"
                   type="number"
                   placeholder="Enter phone number"
+                  className="bg-neutral-300 booking_input p-2"
                 />
               {errors.mobile && touched.mobile && <small className="text-red-500">{errors.mobile}</small>}
-
               </div>
-
-
               <div className="flex flex-col">
                 <label>Email</label>
                 <input
@@ -78,6 +81,7 @@ const BookingModal = ({ open, onClose }) => {
                   name="email"
                   type="text"
                   placeholder="Enter your email"
+                  className="bg-neutral-300 booking_input p-2"
                 />
               {errors.email && touched.email && <small className="text-red-500">{errors.email}</small>}
               </div>
@@ -107,6 +111,8 @@ const BookingModal = ({ open, onClose }) => {
                   onBlur={handleBlur}
                   name="startDate"
                   type="date"
+                  className="bg-neutral-300 booking_input p-2"
+
                 />
               {errors.startDate && touched.startDate && <small className="text-red-500">{errors.startDate}</small>}
               </div>
@@ -119,6 +125,8 @@ const BookingModal = ({ open, onClose }) => {
                   onBlur={handleBlur}
                   name="endDate"
                   type="date"
+                  className="bg-neutral-300 booking_input p-2"
+
                 />
               {errors.endDate && touched.endDate && <small className="text-red-500">{errors.endDate}</small>}
               </div>
@@ -133,6 +141,8 @@ const BookingModal = ({ open, onClose }) => {
                 name="address"
                 type="textarea"
                 placeholder="Enter your full address"
+                  className="bg-neutral-300 booking_input p-2"
+
               />
               {errors.address && touched.address && <small className="text-red-500">{errors.address}</small>}
             </div>

@@ -27,16 +27,17 @@ const Contactus = () => {
 
 
 
-    return <section className="pl-20 pr-20">
+    return <section className="pl-5 pr-5">
         <div>
             <h2 className="text-center font-semibold text-indigo-800 text-4xl mt-20 mb-5">Contact Us</h2>
             <div className=" mb-10">
-                <div className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-2 ">
-                    <div className="bg-neutral-300 rounded-r-2xl basis-1/2 w-80 sm:w-160  mx-auto flex justify-center items-center p-5">
+                <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 ">
+                    <div className="bg-neutral-300 w-full md:w-full md:p-5  rounded-2xl basis-1/2 sm:w-160  mx-auto flex justify-center items-center">
                         <div className="w-full">
                             <form className="flex flex-col items-center w-full" onSubmit={handleSubmit}>
-                                <div className="flex items-center justify-start w-full gap-4 mt-5 mb-5 p-2">
-                                    <CgProfile className="text-5xl p-2 text-white bg-indigo-800 rounded-full" />
+                                {/* <div className=""> */}
+                                   <div className="flex items-center justify-start w-full gap-2 mt-4  p-2">
+                                    <CgProfile className="text-4xl p-2 text-white bg-indigo-800 rounded-full" />
                                     <div className="flex flex-col flex-1">
                                         <input
                                             className="input pl-5 py-2 text-black font-semibold bg-white rounded-md "
@@ -50,8 +51,8 @@ const Contactus = () => {
                                         {errors.name && touched.name && <small className="text-red-500 mt-1">{errors.name}</small>}
                                     </div>
                                 </div>
-                                <div className="flex items-center justify-start w-full gap-4 mt-5 mb-5 p-2">
-                                    <MdMarkEmailRead className="text-5xl p-2 text-white bg-indigo-800 rounded-full" />
+                                <div className="flex items-center justify-start w-full gap-2 mt-4 p-2">
+                                    <MdMarkEmailRead className="text-4xl p-2 text-white bg-indigo-800 rounded-full" />
                                     <div className="flex flex-col flex-1">
                                         <input
                                             className="input pl-5 py-2 font-semibold bg-white rounded-md"
@@ -65,8 +66,8 @@ const Contactus = () => {
                                         {errors.email && touched.email && <small className="text-red-500 mt-1">{errors.email}</small>}
                                     </div>
                                 </div>
-                                <div className="flex items-center justify-start w-full gap-4 mt-5 mb-5 p-2">
-                                    <FaPhoneAlt className="text-5xl p-2 text-white bg-indigo-800 rounded-full" />
+                                <div className="flex items-center justify-start w-full gap-2 mt-4 p-2">
+                                    <FaPhoneAlt className="text-4xl p-2 text-white bg-indigo-800 rounded-full" />
                                     <div className="flex flex-col flex-1">
                                         <input
                                             style={{ color: "black" }}
@@ -81,8 +82,8 @@ const Contactus = () => {
                                         {errors.phone && touched.phone && <small className="text-red-500 mt-1">{errors.phone}</small>}
                                     </div>
                                 </div>
-                                <div className="flex items-center justify-start w-full gap-4 mt-5 mb-5 p-2">
-                                    <FiMessageSquare className="text-5xl p-2 text-white bg-indigo-800 rounded-full" />
+                                <div className="flex items-center justify-start w-full gap-2 mt-4 p-2">
+                                    <FiMessageSquare className="text-4xl p-2 text-white bg-indigo-800 rounded-full" />
                                     <div className="flex flex-col flex-1">
                                         <textarea
                                             className="input pl-5 py-2 font-semibold bg-white rounded-md"
@@ -97,14 +98,16 @@ const Contactus = () => {
                                     </div>
 
                                 </div>
-                                <div>
+                                <div className="my-5 flex justify-center">
                                     <CommonBtn onSubmit={handleSubmit} className="mt-10" title={"Submit"} bg={"bg-indigo-700"} />
                                 </div>
+                                {/* </div> */}
+                                
                             </form>
                         </div>
                     </div>
                     <div className="basis-1/2">
-                        <iframe className="w-full h-full rounded-l-2xl" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3559.611157896548!2d80.92936257489292!3d26.852317262684494!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399bfda4ab6d2195%3A0x68bfb5eaf123f55d!2sSafed%20Baradari!5e0!3m2!1sen!2sin!4v1763531556072!5m2!1sen!2sin"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <iframe className="w-full h-96 lg:h-full rounded-2xl" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3559.611157896548!2d80.92936257489292!3d26.852317262684494!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399bfda4ab6d2195%3A0x68bfb5eaf123f55d!2sSafed%20Baradari!5e0!3m2!1sen!2sin!4v1763531556072!5m2!1sen!2sin"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                     
                 </div>

@@ -1,8 +1,6 @@
 import image1 from "../assets/baradari.jpeg"
 import { SlCalender } from "react-icons/sl";
 import { FaLocationDot } from "react-icons/fa6";
-// import React, { useRef, useState } from 'react';
-// Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 // Import Swiper styles
@@ -16,22 +14,27 @@ import 'swiper/css/pagination';
 import { Navigation, Pagination, Mousewheel, Keyboard } from 'swiper/modules';
 
 const UpComingEvents = () => {
-    return <section id="event" className="scroll-mt-36 mt-20 mb-10 pl-5 pr-5">
+    return <section id="event" className="scroll-mt-36 mt-5 mb-5 pl-5 pr-5">
         <h2 className="text-center text-4xl text-indigo-800 font-semibold">Upcoming Events</h2>
         <div className="flex flex-wrap justify-evenly items-center mt-5">
             <Swiper
                 cssMode={true}
-                slidesPerView={3}
+                slidesPerView={1}
                 // spaceBetween={60}
                 navigation={true}
                 pagination={true}
                 mousewheel={true} rewind loop
                 keyboard={true}
                 modules={[Navigation, Pagination, Mousewheel, Keyboard]}
-                className="mySwiper"
+                className="rounded-2xl"
+                breakpoints={{
+                    640: { slidesPerView: 1,},
+                    768: { slidesPerView: 2,spaceBetween:30},
+                    1024: { slidesPerView: 3, spaceBetween:30}
+                }}
             >
                 <SwiperSlide>
-                    <div className="bg-neutral-300 w-120 rounded-2xl">
+                    <div className="bg-neutral-300  rounded-2xl">
                         <div>
                             <img src={image1} className="w-full object-contain rounded-t-2xl" alt="baradari" />
                         </div>
@@ -54,7 +57,7 @@ const UpComingEvents = () => {
                 </SwiperSlide>
 
                 <SwiperSlide>
-                    <div className="bg-neutral-300  w-120 rounded-2xl">
+                    <div className="bg-neutral-300 rounded-2xl">
                         <div>
                             <img src={image1} className="w-full object-contain rounded-t-2xl" alt="baradari" />
                         </div>
@@ -76,7 +79,7 @@ const UpComingEvents = () => {
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
-                    <div className="bg-neutral-300 w-120 rounded-2xl">
+                    <div className="bg-neutral-300 rounded-2xl">
                         <div>
                             <img src={image1} className="w-full object-contain rounded-t-2xl" alt="baradari" />
                         </div>
@@ -99,7 +102,7 @@ const UpComingEvents = () => {
                 </SwiperSlide>
 
                 <SwiperSlide>
-                    <div className="bg-neutral-300 w-120 rounded-2xl">
+                    <div className="bg-neutral-300 rounded-2xl">
                         <div>
                             <img src={image1} className="w-full object-contain rounded-t-2xl" alt="baradari" />
                         </div>

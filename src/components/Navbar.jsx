@@ -12,7 +12,6 @@ const Navbar = () => {
         <div className="flex justify-start ml-2 basis-1/4 cursor-pointer">
           <img className="rounded-full h-20" src={baradarilogo} alt="baradari logo" />
         </div>
-
         {/* hamburger  */}
         <button
           onClick={() => setOpen(!open)}

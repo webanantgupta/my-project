@@ -10,13 +10,16 @@ html{
 }
 
 .book_section .swiper-slide{
-      height: 200px !important;
+      height: 170px !important;
 }
 
 .input{
       color: black;
 }
 
+.booking_input::placeholder{
+      color: black !important;
+}
 
 /*-----------------------------HERO SECTION--------------------------- */
 
@@ -150,7 +153,11 @@ html{
 
 
 
-
+.swiper_container{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+}
 
 
 
