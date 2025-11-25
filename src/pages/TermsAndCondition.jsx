@@ -1,6 +1,15 @@
+import { useEffect } from "react";
 
 
 const TermsAndCondition = () => {
+
+useEffect(()=>{
+    window.scrollTo({
+        top:0,
+        behavior:"smooth"
+    })
+})
+
     return <div className="pl-5 pr-5">
         <div className="mt-10">
             <h2 className="text-center text-4xl font-semibold text-indigo-800 mb-5">Terms & Conditions</h2>

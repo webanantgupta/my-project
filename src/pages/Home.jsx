@@ -1,25 +1,50 @@
+import { lazy, Suspense } from "react";
 import Aboutsection from "../components/Aboutsection";
 import Book from "../components/Book";
-import Calenders from "../components/Calenders";
-import Contactus from "../components/Contactus";
+// import Calenders from "../components/Calenders";
+// import Contactus from "../components/Contactus";
 import Herosection from "../components/Herosection";
-import Highlights from "../components/Highlights";
-import Members from "../components/Members";
-import Reviews from "../components/Reviews";
-import UpComingEvents from "../components/UpComingEvents";
+// import Highlights from "../components/Highlights";
+// import Members from "../components/Members";
+// import Reviews from "../components/Reviews";
+// import UpComingEvents from "../components/UpComingEvents";
 
+
+const Highlights = lazy(() => import("../components/Highlights"))
+const Calenders = lazy(() => import("../components/Calenders"))
+const Members = lazy(() => import("../components/Members"))
+const UpComingEvents = lazy(() => import("../components/UpComingEvents"))
+const Reviews = lazy(() => import("../components/Reviews"))
+const Contactus = lazy(() => import("../components/Contactus"))
 
 const Home = () => {
     return <div>
         <Herosection />
         <Aboutsection />
-        <Highlights />
+        <Suspense fallback={<div>Loading....</div>}>
+            <Highlights />
+        </Suspense>
+
         <Book />
-        <Calenders/>
-        <Members />
-        <UpComingEvents />
-        <Reviews />
-        <Contactus />
+
+        <Suspense fallback={<div>Loading....</div>}>
+            <Calenders />
+        </Suspense>
+
+        <Suspense fallback={<div>Loading....</div>}>
+            <Members />
+        </Suspense>
+
+        <Suspense fallback={<div>Loading....</div>}>
+            <UpComingEvents />
+        </Suspense>
+
+        <Suspense fallback={<div>Loading....</div>}>
+            <Reviews />
+        </Suspense>
+        <Suspense fallback={<div>Loading....</div>}>
+            <Contactus />
+        </Suspense>
     </div>
 }
 
