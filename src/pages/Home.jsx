@@ -1,6 +1,6 @@
 import { lazy, Suspense } from "react";
 import Aboutsection from "../components/Aboutsection";
-import Book from "../components/Book";
+// import Book from "../components/Book";
 // import Calenders from "../components/Calenders";
 // import Contactus from "../components/Contactus";
 import Herosection from "../components/Herosection";
@@ -16,6 +16,8 @@ const Members = lazy(() => import("../components/Members"))
 const UpComingEvents = lazy(() => import("../components/UpComingEvents"))
 const Reviews = lazy(() => import("../components/Reviews"))
 const Contactus = lazy(() => import("../components/Contactus"))
+const Book = lazy(()=> import ("../components/Book"))
+
 
 const Home = () => {
     return <div>
@@ -25,7 +27,9 @@ const Home = () => {
             <Highlights />
         </Suspense>
 
+<Suspense fallback={<div>Loading...</div>}>
         <Book />
+</Suspense>
 
         <Suspense fallback={<div>Loading....</div>}>
             <Calenders />
