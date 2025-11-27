@@ -2,7 +2,7 @@ import image1 from "../assets/baradari.jpeg"
 import { SlCalender } from "react-icons/sl";
 import { FaLocationDot } from "react-icons/fa6";
 import { Swiper, SwiperSlide } from 'swiper/react';
-
+import headline from "../assets/headline2.png";
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -14,8 +14,12 @@ import 'swiper/css/pagination';
 import { Navigation, Pagination, Mousewheel, Keyboard } from 'swiper/modules';
 
 const UpComingEvents = () => {
-    return <section id="event" className="scroll-mt-36 mt-5 mb-5 pl-5 pr-5">
-        <h2 className="text-center text-4xl text-indigo-800 font-semibold">Upcoming Events</h2>
+    return <section  id="event" className="scroll-mt-36 mt-5 mb-5 pl-5 pr-5">
+        <div data-aos="fade-up">
+        <h2  className="text-center text-4xl text-indigo-800 font-semibold">Upcoming Events</h2>
+        <div className="flex justify-center">
+            <img src={headline} alt="headline" className="w-full md:h-20 md:w-80 " />
+        </div>
         <div className="flex flex-wrap justify-evenly items-center mt-5">
             <Swiper
                 cssMode={true}
@@ -219,6 +223,7 @@ const UpComingEvents = () => {
                         A place where history adds grace to every birthday moment</p>
                 </div>
             </div>  */}
+        </div>
         </div>
     </section>
 }

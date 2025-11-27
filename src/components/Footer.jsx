@@ -2,29 +2,21 @@ import { BsMeta } from "react-icons/bs";
 import { SiInstagram } from "react-icons/si";
 import { FaLinkedinIn } from "react-icons/fa6";
 import { BsTwitterX } from "react-icons/bs";
-import { Link as ScrollLink, scroller } from "react-scroll";
+import { Link as ScrollLink, } from "react-scroll";
 import { Link as RouterLink, useLocation, useNavigate } from "react-router-dom";
 
 
 const Footer = () => {
-    const location = useLocation();
-
+    const location = useLocation(); 
     const navigate = useNavigate();
-    
+
     const handleNavigate = (section) => {
         if (location.pathname !== '/') {
             navigate('/', { state: { scrollTo: section } });
-        } else {
-            scroller.scrollTo(section, {
-                smooth: true,
-                delay: 0,
-                duration: 500,
-                offset: -110,
-            });
-        }
+        } 
     }
     return <footer className="w-full   bottom-0 ">
-        <div className="bg-neutral-300 p-2">
+        <div data-aos="fade-up" className="bg-neutral-300 p-2">
             {/* <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 pt-2">
                 <div className=" basis-2/6 flex flex-col items-center">
                     <a href="#navbar">
@@ -61,23 +53,23 @@ const Footer = () => {
             </div>
             <div className="mt-2 sm:mt-5 lg:mt-10">
                 <ul className="grid grid-cols-2 items-center mx-2 justify-center gap-4 md:flex lg:flex lg:justify-evenly ">
-                    <li><ScrollLink className="font-semibold cursor-pointer md:font-bold lg:font-bold hover:text-indigo-800"
+                    <li><ScrollLink className="font-semibold cursor-pointer md:font-bold lg:text-xl lg:font-bold hover:text-indigo-800"
                         onClick={() => {
                             handleNavigate('about')
                         }} to="about">About</ScrollLink></li>
-                    <li><ScrollLink className="font-semibold cursor-pointer hover:text-indigo-800" onClick={() => {
+                    <li><ScrollLink className="font-semibold  md:font-bold lg:font-bold lg:text-lg cursor-pointer hover:text-indigo-800" onClick={() => {
                         handleNavigate('book')
                     }} to="book">How To Book</ScrollLink></li>
-                    <li><ScrollLink className="font-semibold cursor-pointer hover:text-indigo-800" onClick={() => {
+                    <li><ScrollLink className="font-semibold  md:font-bold lg:font-bold lg:text-xl cursor-pointer hover:text-indigo-800" onClick={() => {
                         handleNavigate('member')
                     }} to="member">Members</ScrollLink></li>
-                    <li><ScrollLink className="font-semibold cursor-pointer hover:text-indigo-800"
+                    <li><ScrollLink className="font-semibold  md:font-bold lg:font-bold lg:text-xl cursor-pointer hover:text-indigo-800"
                         onClick={() => {
                             handleNavigate('event')
                         }}
                         to="event">Upcoming Events</ScrollLink></li>
-                    <li><RouterLink className="font-semibold  hover:text-indigo-800" to="/privacy">Privacy Policy</RouterLink></li>
-                    <li><RouterLink className="font-semibold  hover:text-indigo-800" to="/term">Terms And Conditions</RouterLink></li>
+                    <li><RouterLink className="font-semibold  md:font-bold lg:font-bold lg:text-xl hover:text-indigo-800" to="/privacy">Privacy Policy</RouterLink></li>
+                    <li><RouterLink className="font-semibold  md:font-bold lg:font-bold lg:text-xl hover:text-indigo-800" to="/term">Terms And Conditions</RouterLink></li>
                 </ul>
             </div>
             <div className="flex justify-center gap-8 mt-4 sm:mt-5 lg:mt-10">

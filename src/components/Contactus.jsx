@@ -6,6 +6,8 @@ import { MdMarkEmailRead } from "react-icons/md";
 import { FiMessageSquare } from "react-icons/fi";
 import { FaLocationDot } from "react-icons/fa6";
 import { FaPhoneAlt } from "react-icons/fa";
+import headline from "../assets/headline2.png";
+import { Link } from "react-router-dom";
 
 const Contactus = () => {
 
@@ -28,8 +30,11 @@ const Contactus = () => {
 
 
     return <section className="pl-5 pr-5">
-        <div>
-            <h2 className="text-center font-semibold text-indigo-800 text-4xl mt-20 mb-5">Contact Us</h2>
+        <div data-aos="fade-up">
+            <h2 className="text-center font-semibold text-indigo-800 text-4xl mt-10">Contact Us</h2>
+             <div className="flex justify-center">
+                  <img src={headline} alt="headline" className="w-full md:h-20 md:w-80  lg:w-70" />
+              </div>
             <div className=" mb-10">
                 <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 ">
                     <div className="bg-neutral-300 w-full md:w-full md:p-5  rounded-2xl basis-1/2 sm:w-160  mx-auto flex justify-center items-center">
@@ -114,16 +119,15 @@ const Contactus = () => {
                 <div className="grid grid-cols-1  sm:grid-cols-1 w-full lg:grid-cols-3">
                     <div className="flex flex-col items-center justify-between basis-2/6 p-6 shadow-2xl">
                         <FaLocationDot className="text-6xl text-white bg-indigo-800 p-3 rounded-full mb-2" />
-                        <p>Safed Baradari,Maharaja Mahmudabad,</p>
-                        <p>Kaiser Bagh, Lucknow 226018</p>
+                        <Link to={"https://www.google.com/maps/place/Safed+Baradari/@26.8523173,80.9293626,17z/data=!3m1!4b1!4m6!3m5!1s0x399bfda4ab6d2195:0x68bfb5eaf123f55d!8m2!3d26.8523125!4d80.9319375!16s%2Fm%2F0ynzq6q?entry=ttu&g_ep=EgoyMDI1MTEyMy4xIKXMDSoASAFQAw%3D%3D"}  target="_blank" className="text-center">KaiserSafed Baradari,Maharaja Mahmudabad,Kaiser Bagh, Lucknow 226018</Link>
                     </div>
                     <div className="flex flex-col items-center justify-start basis-2/6 p-6 shadow-2xl">
                         <FaPhoneAlt className="text-6xl text-white bg-indigo-800 p-3 rounded-full mb-2" />
-                        <p>+91 - 770-500-9900</p>
+                        <Link to={"tel:+7705009900"}>+91 - 770-500-9900</Link>
                     </div>
                     <div className="flex flex-col items-center justify-start basis-2/6 p-6 shadow-2xl">
                         <MdMarkEmailRead className="text-6xl text-white bg-indigo-800 p-3 rounded-full mb-2" />
-                        <p>safedBaradari123@gmail.com</p>
+                        <Link to={"mailto:safedBaradari123@gmail.com"}>safedBaradari123@gmail.com</Link>
                     </div>
                 </div>
             </div>

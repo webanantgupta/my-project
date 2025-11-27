@@ -1,14 +1,18 @@
 import baradariAbout from "../assets/baradarihero1.jpg";
-
+import headline from "../assets/headline2.png";
 
 
 const Aboutsection = () => {
     return <section id="about" className="about_container">
+        <div data-aos="fade-up">
         <div className="about_element flex gap-4 ">
-            <div className="about_content basis-2/4 pr-2">
-                <h2 className="text-4xl font-semibold text-center text-indigo-800 mb-5">About Safed Baradari</h2>
+            <div className="about_content basis-2/4 pr-2 ">
+                <h2 className="text-4xl font-semibold text-center text-indigo-800">About Safed Baradari</h2>
+                 <div className="flex justify-center">
+                  <img src={headline} alt="headline" className="w-full md:h-20 md:w-100 " />
+              </div>
                 <h4 className="text-2xl font-medium text-indigo-800 text-center md:text-start mb-2">Overview</h4>
-                <p className="mb-10 text-center">Built by Nawab Wajid Ali Shah, Safed Baradari is a white marbled palace originally constructed as the Nawab's "Palace of Mourning". Located at Maharaja Mahamudabad of Qaiser Bagh, the Safed Baradari houses marble statues of the Anjuman founders Maharajas Man Singh and Balrampur's Digvijay Singh. Initially called Qasr-ul-Aza, this structure further came to be used as a British petitionary court.</p>
+                <p className="mb-5 text-center">Built by Nawab Wajid Ali Shah, Safed Baradari is a white marbled palace originally constructed as the Nawab's "Palace of Mourning". Located at Maharaja Mahamudabad of Qaiser Bagh, the Safed Baradari houses marble statues of the Anjuman founders Maharajas Man Singh and Balrampur's Digvijay Singh. Initially called Qasr-ul-Aza, this structure further came to be used as a British petitionary court.</p>
                 <h4 className="text-2xl text-center md:text-start font-medium text-indigo-800 mb-2">Architecture</h4>
                 <p className="text-center">Built by Nawab Wajid Ali Shah in 1854, the Safed Baradari houses an entire royal manifestation in marble. It sites elaborate corridors, halls and well-designed architectural intricacies. This marble palace also hosts two marble statues of the Maharajas in the Baradar's main hall.
                 </p>
@@ -18,6 +22,7 @@ const Aboutsection = () => {
             <div className="about_image basis-2/4">
                 <img className="w-full object-cover" src={baradariAbout} alt="baradari image" />
             </div>
+        </div>
         </div>
        
     </section>

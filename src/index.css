@@ -24,6 +24,11 @@ html{
 
 /*-----------------------------HERO SECTION--------------------------- */
 
+
+.hero_image{
+      object-fit: contain !important;
+}
+
 @media (max-width: 600px){
       .hero_element{
           text-align: center;
@@ -48,7 +53,7 @@ html{
 }
 
 .about_content{
-  margin-top: 30px;
+  margin-top: 10px;
   padding-left: 10px;
   padding-right: 10px;
 }
@@ -75,9 +80,13 @@ html{
       }
 
       .about_content{
-            margin-top: 40px;
+            /* margin-top: 40px; */
             padding-left: 20px;
             padding-right: 20px;
+      }
+
+      .about_content h4{
+            text-align: center;
       }
       .about_image img{
             padding-left: 20px;

@@ -1,6 +1,5 @@
 import BookingValidation from "./BookingValidation";
 import { useFormik } from "formik";
-import {toast} from "react-toastify"
 
 const BookingModal = ({ open, onClose }) => {
 
@@ -28,9 +27,6 @@ const BookingModal = ({ open, onClose }) => {
       resetForm();
     }
   });
-
-
-
 
 
   return (
@@ -88,6 +84,7 @@ const BookingModal = ({ open, onClose }) => {
               <div className="flex flex-col">
                 <label for="bookingType">Booking Table</label>
                 <select
+                className="bg-neutral-300 h-10"
                   id="bookingType"
                   name="bookingType"
                   value={values.bookingType}

@@ -1,4 +1,4 @@
-import workimg from "../assets/baradari2.png"
+import working from "../assets/baradari2.png"
 import { Fa1 } from "react-icons/fa6";
 import { Fa2 } from "react-icons/fa6";
 import { Fa3 } from "react-icons/fa6";
@@ -14,18 +14,25 @@ import 'swiper/css/pagination';
 // import required modules;
 import {Autoplay, Mousewheel, Pagination } from 'swiper/modules';
 import { Navigation } from 'swiper/modules';
+import headline from "../assets/headline2.png"
 
 
 
 const Book = () => {
-    return <section id="book" className="scroll-mt-36 mt-5 mb-10 pl-5 pr-5">
+    
+    return <section id="book" className="scroll-mt-36 mb-10 pl-5 pr-5">
+        <div data-aos="fade-up">
+
         <div className="flex flex-col-reverse md:flex-row mt-20">
             <div className="basis-2/4">
-                <img className="w-full h-[400px] object-cover rounded-md mt-5 md:h-full" src={workimg} alt="baradari" />
+                <img className="w-full h-[400px] object-cover rounded-md mt-5 md:h-full" src={working} alt="baradari" />
             </div>
             <div className="basis-2/4">
                 <div>
                     <h2 className="text-4xl font-semibold text-indigo-800 text-center">How To Book For Any Occasion </h2>
+                     <div className="flex justify-center">
+                  <img src={headline} alt="headline" className="w-full md:h-20 md:w-80  lg:w-140" />
+              </div>
                     <p className="text-center font-semibold text-neutral-500 mt-2">Follow these simple steps to make your royal celebration at Safed Baradari unforgettable.</p>
                 </div>
                 <div className="flex flex-col items-center justify-center mt-10 pl-5 pr-5 basis-2/4 h-[400px]">
@@ -224,6 +231,7 @@ const Book = () => {
 
                 </div>
             </div>
+        </div>
         </div>
 
     </section>

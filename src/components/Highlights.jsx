@@ -2,14 +2,17 @@ import { FaHireAHelper } from "react-icons/fa";
 import { IoAccessibility } from "react-icons/io5";
 import { RiParkingBoxFill } from "react-icons/ri";
 import { FaWifi } from "react-icons/fa";
+import headline from "../assets/headline2.png";
 
 const Highlights = () => {
-    return <section id="highlight" className="highlight_container scroll-mt-36">
-        <div>
-            <div className="highlight_heading mb-10">
-                <h2 className="text-4xl mt-10 sm:mt-10 lg:mt-20 text-center font-semibold text-indigo-800">Highlights</h2>
+    return <section id="highlight" className="highlight_container scroll-mt-36 px-5">
+        <div data-aos="fade-up">
+            <div className="highlight_heading">
+                <h2 className="text-4xl mt-5 md:mt-5 lg:mt-20 text-center font-semibold text-indigo-800">Highlights</h2>
             </div>
-
+             <div className="flex justify-center">
+                              <img src={headline} alt="headline" className="w-full md:h-20 md:w-80 " />
+                          </div>
 
             <div className="highlight_element 
              grid
