@@ -1,9 +1,9 @@
-import { BsMeta } from "react-icons/bs";
 import { SiInstagram } from "react-icons/si";
 import { FaLinkedinIn } from "react-icons/fa6";
 import { BsTwitterX } from "react-icons/bs";
 import { Link as ScrollLink, } from "react-scroll";
-import { Link as RouterLink, useLocation, useNavigate } from "react-router-dom";
+import { Link, Link as RouterLink, useLocation, useNavigate } from "react-router-dom";
+import { FaFacebookF } from "react-icons/fa6";
 
 
 const Footer = () => {
@@ -53,28 +53,30 @@ const Footer = () => {
             </div>
             <div className="mt-2 sm:mt-5 lg:mt-10">
                 <ul className="grid grid-cols-2 items-center mx-2 justify-center gap-4 md:flex lg:flex lg:justify-evenly ">
-                    <li><ScrollLink className="font-semibold cursor-pointer md:font-bold lg:text-xl lg:font-bold hover:text-indigo-800"
+                    <li><ScrollLink className="font-semibold cursor-pointer md:font-bold lg:text-xl lg:font-bold hover:text-indigo-800 hover:underline"
                         onClick={() => {
                             handleNavigate('about')
                         }} to="about">About</ScrollLink></li>
-                    <li><ScrollLink className="font-semibold  md:font-bold lg:font-bold lg:text-lg cursor-pointer hover:text-indigo-800" onClick={() => {
+                    <li><ScrollLink className="font-semibold  md:font-bold lg:font-bold lg:text-lg cursor-pointer hover:text-indigo-800 hover:underline" onClick={() => {
                         handleNavigate('book')
                     }} to="book">How To Book</ScrollLink></li>
-                    <li><ScrollLink className="font-semibold  md:font-bold lg:font-bold lg:text-xl cursor-pointer hover:text-indigo-800" onClick={() => {
+                    <li><ScrollLink className="font-semibold  md:font-bold lg:font-bold lg:text-xl cursor-pointer hover:text-indigo-800 hover:underline" onClick={() => {
                         handleNavigate('member')
                     }} to="member">Members</ScrollLink></li>
-                    <li><ScrollLink className="font-semibold  md:font-bold lg:font-bold lg:text-xl cursor-pointer hover:text-indigo-800"
+                    <li><ScrollLink className="font-semibold  md:font-bold lg:font-bold lg:text-xl cursor-pointer hover:text-indigo-800 hover:underline"
                         onClick={() => {
                             handleNavigate('event')
                         }}
                         to="event">Upcoming Events</ScrollLink></li>
-                    <li><RouterLink className="font-semibold  md:font-bold lg:font-bold lg:text-xl hover:text-indigo-800" to="/privacy">Privacy Policy</RouterLink></li>
-                    <li><RouterLink className="font-semibold  md:font-bold lg:font-bold lg:text-xl hover:text-indigo-800" to="/term">Terms And Conditions</RouterLink></li>
+                    <li><RouterLink className="font-semibold  md:font-bold lg:font-bold lg:text-xl hover:text-indigo-800 hover:underline" to="/privacy">Privacy Policy</RouterLink></li>
+                    <li><RouterLink className="font-semibold  md:font-bold lg:font-bold lg:text-xl hover:text-indigo-800 hover:underline" to="/term">Terms And Conditions</RouterLink></li>
                 </ul>
             </div>
             <div className="flex justify-center gap-8 mt-4 sm:mt-5 lg:mt-10">
-                <BsMeta className="text-4xl text-indigo-700 cursor-pointer" />
+                <FaFacebookF className="text-3xl text-indigo-700 cursor-pointer" />
+                <Link to="https://www.instagram.com/safedbaradari/?hl=en" target="_blank">
                 <SiInstagram className="text-3xl text-pink-400 cursor-pointer" />
+                </Link>
                 <FaLinkedinIn className="text-3xl text-blue-500 cursor-pointer" />
                 <BsTwitterX className="text-2xl cursor-pointer" />
             </div>

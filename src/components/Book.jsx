@@ -44,9 +44,9 @@ const Book = () => {
                         }}
                         spaceBetween={0}
                         mousewheel={true}
-                        pagination={{
-                            clickable: true,
-                        }}
+                        // pagination={{
+                        //     clickable: true,
+                        // }}
                         modules={[Autoplay,Mousewheel, Pagination, Navigation]}
                         className="mySwiper book_section w-full"
                     >

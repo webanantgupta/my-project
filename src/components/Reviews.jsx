@@ -17,7 +17,7 @@ import { ImQuotesRight } from "react-icons/im";
 
 
 const Reviews = () => {
-    console.log(reviewData);
+    // console.log(reviewData);
 
     return (
 
@@ -49,14 +49,18 @@ const Reviews = () => {
                                     <SwiperSlide key={index} className="bg-neutral-300 rounded-2xl p-5">
                                         <div className='flex flex-col justify-evenly items-center h-65 px-4'>
                                             <div className='flex justify-center items-center gap-4'>
-                                                <ImQuotesLeft className='text-2xl text-indigo-800' />
+                                                {/* <ImQuotesLeft className='text-2xl text-indigo-800' /> */}
                                                 <div>
                                                     <img className="h-25 w-25 md:h-20 md:w-20 lg:w-30 lg:h-30 rounded-full" src={obj.image} alt="person" />
                                                 </div>
-                                                    <ImQuotesRight className='text-2xl text-indigo-800' />
+                                                {/* <ImQuotesRight className='text-2xl text-indigo-800' /> */}
                                             </div>
                                             <div className='flex flex-col '>
-                                                <p className="text-center">{obj.review}</p>
+                                                <div className='flex md:gap-2 lg:gap-4'>
+                                                <ImQuotesLeft  className='text-4xl md:text-6xl text-indigo-800'/>
+                                                    <p className="text-center">{obj.review}</p>
+                                                <ImQuotesRight className='text-4xl md:text-6xl text-indigo-800'/>
+                                                </div>
                                                 <p className="text-center text-indigo-800 font-bold text-xl">{obj.name}</p>
                                             </div>
                                         </div>

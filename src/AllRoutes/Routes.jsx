@@ -11,6 +11,7 @@ const AllRoutes = () => {
                 <Route path="/privacy" element={<PrivacyPolicy />} />
                 <Route path="/term" element={<TermsAndCondition />} />
             </Routes>
+
     </div>
 }
 

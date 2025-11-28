@@ -26,7 +26,7 @@ const UpComingEvents = () => {
                 slidesPerView={1}
                 // spaceBetween={60}
                 navigation={true}
-                pagination={true}
+                // pagination={true}
                 mousewheel={true} rewind loop
                 keyboard={true}
                 modules={[Navigation, Pagination, Mousewheel, Keyboard]}

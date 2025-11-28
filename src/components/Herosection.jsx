@@ -1,4 +1,3 @@
-import { useState } from "react";
 // import baradariHero from "../assets/baradari3.jpg"
 import BookingModal from "./BookingModal";
 // Import Swiper React components

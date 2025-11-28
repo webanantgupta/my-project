@@ -53,11 +53,11 @@ const handleNavigateHeader = (section) =>{
         {/* Desktop li */}
         <div className="hidden lg:block basis-2/4">
           <ul className="navbar_items flex justify-evenly text-lg font-bold">
-            <li className="cursor-pointer hover:text-indigo-800"><Link onClick={()=>handleNavigateHeader("about")} to="about" smooth={true} offset={-100} duration={500}>About</Link></li>
-            <li className="cursor-pointer hover:text-indigo-800"><Link onClick={()=>handleNavigateHeader("book")} to="book" smooth={true} offset={-100} duration={500}>How To Book</Link></li>
-            <li className="cursor-pointer hover:text-indigo-800"><Link onClick={()=>handleNavigateHeader("member")} to="member" smooth={true} offset={-100} duration={500}>Members</Link></li>
-            <li className="cursor-pointer hover:text-indigo-800"><Link onClick={()=>handleNavigateHeader("event")} to="event" smooth={true} offset={-100} duration={500}>Events</Link></li>
-            <li className="cursor-pointer hover:text-indigo-800"><Link onClick={()=>handleNavigateHeader("review")} to="review" smooth={true} offset={-100} duration={500}>Reviews</Link></li>
+            <li className="cursor-pointer hover:text-indigo-800 hover:underline"><Link onClick={()=>handleNavigateHeader("about")} to="about" smooth={true} offset={-100} duration={500}>About</Link></li>
+            <li className="cursor-pointer hover:text-indigo-800 hover:underline"><Link onClick={()=>handleNavigateHeader("book")} to="book" smooth={true} offset={-100} duration={500}>How To Book</Link></li>
+            <li className="cursor-pointer hover:text-indigo-800 hover:underline"><Link onClick={()=>handleNavigateHeader("member")} to="member" smooth={true} offset={-100} duration={500}>Members</Link></li>
+            <li className="cursor-pointer hover:text-indigo-800 hover:underline"><Link onClick={()=>handleNavigateHeader("event")} to="event" smooth={true} offset={-100} duration={500}>Events</Link></li>
+            <li className="cursor-pointer hover:text-indigo-800 hover:underline"><Link onClick={()=>handleNavigateHeader("review")} to="review" smooth={true} offset={-100} duration={500}>Reviews</Link></li>
           </ul>
         </div>
       </div>

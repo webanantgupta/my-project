@@ -5,7 +5,7 @@ import Aboutsection from "../components/Aboutsection";
 // import Contactus from "../components/Contactus";
 import Herosection from "../components/Herosection";
 import { useState } from "react";
-import Package from "../components/Package";
+// import Package from "../components/Package";
 // import Highlights from "../components/Highlights";
 // import Members from "../components/Members";
 // import Reviews from "../components/Reviews";
@@ -19,6 +19,7 @@ const UpComingEvents = lazy(() => import("../components/UpComingEvents"))
 const Reviews = lazy(() => import("../components/Reviews"))
 const Contactus = lazy(() => import("../components/Contactus"))
 const Book = lazy(() => import("../components/Book"))
+const Package = lazy(() => import("../components/Package"))
 
 
 const Home = () => {
@@ -26,7 +27,8 @@ const Home = () => {
 
 
     return <div>
-        <Herosection open={open} setOpen={setOpen}/>
+      
+        <Herosection open={open} setOpen={setOpen} />
         <Aboutsection />
         <Suspense fallback={<div>Loading....</div>}>
             <Highlights />
@@ -44,7 +46,9 @@ const Home = () => {
             <Members />
         </Suspense>
 
-       <Package/>
+        <Suspense fallback={<div>Loading...</div>}>
+            <Package />
+        </Suspense>
 
         <Suspense fallback={<div>Loading....</div>}>
             <UpComingEvents />
